@@ -1,0 +1,76 @@
+.jumbotron{
+	margin-top: 0;
+	margin-bottom: 30px;
+	padding-top: 10px;
+
+}
+#logo{
+	width: 100px;
+	height: 100px;
+	float: left;
+}
+#Box{
+	padding-top: 50px;
+	align-items: center;
+	padding-left: 500px;
+	padding-right: 500px;
+}
+
+
+#searchButton
+{
+	width: 200px;
+	height: 40px;
+	font-size: 16px;
+	color: black;
+
+}
+#searchBox
+{
+  display: inline;
+	padding-bottom: 20px;
+  height : 20px;
+	width: 500px;
+	text-align: center;;
+	font-size: 16px;
+	padding-top: 20px;
+	padding-left: auto;
+}
+#logo
+{
+
+
+	float: left;
+}
+#search-logo
+{
+	width: 30px;
+	height: 30px;
+}
+#heading
+{
+
+	text-align: center;
+}
+
+#right{
+	float: right;
+}
+#left{
+		display: block;
+	padding-left: 100px;
+
+}
+
+#navbaar{
+	height: 40px;
+	padding-left: 50px;
+	padding-right: 50px;
+	background-color: #333;
+	}
+
+
+	.active{
+		color: #F1C40F;
+		background-color: black;
+	}
