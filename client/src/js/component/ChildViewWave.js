@@ -9,7 +9,7 @@ var ChildViewWave=React.createClass({
   render: function(){
     return (
       <div className="jumbotron">
-      <h3>waveName : {this.props.data.waveName}</h3>
+      <h2>Batch Name : {this.props.data.waveName}</h2>
       <h3>waveType : {this.props.data.waveType}</h3>
       <h3>Location : {this.props.data.Location}</h3>
       <h3>NumberOfParticipants : {this.props.data.NumberOfParticipants}</h3>

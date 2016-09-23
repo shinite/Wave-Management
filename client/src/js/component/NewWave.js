@@ -20,7 +20,6 @@ var NewWave=React.createClass({
         console.log("successfully sent");
       },
       error: function(xhr, status, err) {
-        alert("New Wave Not Submitted")
         console.error("http://localhost:8085/wave/add", status, err.toString());
       }
     });

@@ -45,7 +45,7 @@ var ChildNewWave=React.createClass({
 
         <div id>
 
-        <h2 id="wavehead">New Wave</h2>
+        <h2 id="wavehead">Insert New Wave</h2>
 
         <div id="Box">
         <form className="form-horizontal">
