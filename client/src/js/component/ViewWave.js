@@ -7,6 +7,25 @@ var ViewWave=React.createClass({
     return({data: []})
   },
 
+
+    changeState:function(waveName){
+      console.log(waveName);
+      $.ajax({
+        url: "http://localhost:8085/wave/delete/"+waveName,
+        type:"DELETE",
+        cache: false,
+        success: function(d)
+        {
+          console.log("inside delete ajax");
+          this.setState({data:d});
+          //this.props.changeState(this.props.imdbID);
+        }  .bind(this),
+        error: function(xhr, status, err) {
+          console.error("http://localhost:8085/wave/delete/", status, err.toString());
+        }.bind(this)
+      });
+
+    },
   componentWillMount: function(){
     console.log("Get the Db");
     $.ajax({
@@ -29,7 +48,7 @@ var ViewWave=React.createClass({
     var movieList = this.state.data.map(function(arr) {
       return (
         <div>
-          <ChildViewWave data={arr}/>
+        <ChildViewWave data={arr} changeState={this.changeState}/>
         </div>
       );
     }.bind(this));
